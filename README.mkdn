@@ -1,4 +1,4 @@
-LMODroid
+amogOS ROM
 ===========
 
 Getting started
@@ -9,9 +9,24 @@ familiar with [Repo](https://source.android.com/source/using-repo.html) and [Ver
 
 To initialize your local repository using the LMODroid trees, use a command like this:
 ```
-repo init -u https://git.libremobileos.com/LMODroid/manifest.git -b fifteen --git-lfs
+repo init -u https://github.com/AmogOS-Rom/android_manifest.git -b fifteen --git-lfs
 ```
 Then to sync up:
 ```
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+To start the build you should run the following commands:
+```bash
+source build/envsetup.sh
+
+# replace $codename with the actual codename of your device
+lunch lmodroid_$codename-userdebug
+
+m bacon
+```
+Credits
+===========
+
+- LMODroid (Base ROM)
+- Radek Błędowski (Logo)
+- Igor121 (Wallpaper)
