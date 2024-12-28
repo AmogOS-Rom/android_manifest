@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- remotes -->
+  <remote name="amogos"
+      fetch="https://github.com/AmogOS-Rom"
+      revision="fifteen" />
+
+  <remote name="github"
+      fetch="https://github.com"
+      revision="fifteen" />
+
+  <remote name="gitlab"
+      fetch="https://gitlab.com" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="AmogOS-ROM/android_manifest" remote="github" />
+</manifest>
